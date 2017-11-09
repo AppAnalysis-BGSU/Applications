@@ -1,6 +1,4 @@
-# Applications
-
-List of Applications 
+# List of Applications 
 
 ### SMS Stealer 
 
