@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shiva.registerme.FacultyActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/viewAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View all"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="12dp" />
+    <Button
+        android:id="@+id/viewByState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View by state"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+    <Button
+        android:id="@+id/viewByAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View by age" />
+
+    <Button
+        android:id="@+id/sendemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Email" />
+    <Button
+        android:id="@+id/sendsms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send SMS" />
+</LinearLayout>

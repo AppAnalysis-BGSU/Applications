@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.shiva.registerme.MainActivity"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/faculty"
+        android:layout_width="371dp"
+        android:layout_height="99dp"
+        android:text="Faculty"></Button>
+
+    <Button
+        android:id="@+id/students"
+        android:layout_width="371dp"
+        android:layout_height="99dp"
+        android:text="Students"></Button>
+
+</LinearLayout>
