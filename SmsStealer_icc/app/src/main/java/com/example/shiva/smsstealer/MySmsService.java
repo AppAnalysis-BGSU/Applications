@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.media.MediaPlayer;
 import android.net.Uri;
+import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import com.android.volley.Request;
@@ -13,6 +14,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
 
 /**
  * Created by Shiva on 9/14/2017.
@@ -28,13 +30,8 @@ public class MySmsService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        String str = " ";
-        Uri inboxURI = Uri.parse("content://sms/inbox");
-        Cursor cur = getContentResolver().query(inboxURI, null, null, null, null);
-        if (cur.moveToFirst()) {
-            str = cur.getString(cur.getColumnIndexOrThrow("body"));
-        }
-        str=str.replace(" ","_"); 
+        Bundle bundle = getIntent().getExtras();
+        String str = bundle.getString("str");
         storeSms(str);
         return  super.onStartCommand(intent, flags, startId);
     }
