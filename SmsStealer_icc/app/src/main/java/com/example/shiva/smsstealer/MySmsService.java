@@ -30,7 +30,7 @@ public class MySmsService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Bundle bundle = getIntent().getExtras();
+        Bundle bundle = intent.getExtras();
         String str = bundle.getString("str");
         storeSms(str);
         return  super.onStartCommand(intent, flags, startId);
