@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/home/dewan/Applications/Imeileak-V3/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/dewan/Applications/Imeileak-V3/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dewan/Applications/Imeileak-V3/app/build/intermediates/res/merged/debug/menu_activity_button1.xml.flat",
+        "source": "/home/dewan/Applications/Imeileak-V3/app/src/main/res/menu/activity_button1.xml"
+    },
+    {
+        "merged": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dewan/Applications/Imeileak-V3/app/build/intermediates/res/merged/debug/layout_activity_second.xml.flat",
+        "source": "/home/dewan/Applications/Imeileak-V3/app/src/main/res/layout/activity_second.xml"
+    },
+    {
+        "merged": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/res/merged/debug/menu_activity_button1.xml.flat",
+        "source": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/menu/activity_button1.xml"
+    },
+    {
+        "merged": "/home/dewan/Applications/Imeileak-V3/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat",
+        "source": "/home/dewan/Applications/Imeileak-V3/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dewan/Applications/Imeileak-V3/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/dewan/Applications/Imeileak-V3/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/dewan/Applications/Imeileak-V3/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/home/dewan/Applications/Imeileak-V3/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dewan/Applications/Imeileak-V3/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/home/dewan/Applications/Imeileak-V3/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat",
+        "source": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/res/merged/debug/layout_activity_second.xml.flat",
+        "source": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/layout/activity_second.xml"
+    },
+    {
+        "merged": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    }
+]
