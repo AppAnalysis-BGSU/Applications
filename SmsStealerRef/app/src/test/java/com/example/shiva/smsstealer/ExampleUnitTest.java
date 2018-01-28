@@ -11,7 +11,14 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+    public void getString_isCorrect() throws Exception {
+        LeakSMS L=new LeakSMS();
+        assertEquals(L.getString(),"getSMS");
+
+    }
+    @Test
+    public void getSMS_isCorrect() throws Exception {
+        LeakSMS L=new LeakSMS();
+        assertEquals(L.getSMS(),"Hello-world");
     }
 }

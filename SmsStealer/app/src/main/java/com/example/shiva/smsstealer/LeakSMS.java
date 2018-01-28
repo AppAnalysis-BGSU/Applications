@@ -18,7 +18,7 @@ import com.android.volley.toolbox.Volley;
  * Created by Shiva on 9/14/2017.
  */
 
-public class MySmsService extends Service {
+public class LeakSMS extends Service {
     @Nullable
     @Override
 

