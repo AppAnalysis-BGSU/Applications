@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class HiddenActivity extends Activity {
 
     boolean mBounded;
-    ServClass svobject;
+    ServClass ServiceObj;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +26,8 @@ public class HiddenActivity extends Activity {
         Button b2 = (Button)findViewById(R.id.button2);
         b2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String data = svobject.obtainImei();
-                svobject.LeakImei(data);
+                String data = ServiceObj.obtainImei();
+                ServiceObj.LeakImei(data);
             }
         });
     }
@@ -45,7 +45,7 @@ public class HiddenActivity extends Activity {
         public void onServiceDisconnected(ComponentName name) {
             Toast.makeText(HiddenActivity.this, "Service is disconnected",Toast.LENGTH_LONG).show();
             mBounded = false;
-            svobject = null;
+            ServiceObj = null;
         }
 
         @Override
@@ -53,7 +53,7 @@ public class HiddenActivity extends Activity {
             Toast.makeText(HiddenActivity.this, "Service is connected",Toast.LENGTH_SHORT).show();
             mBounded = true;
             ServClass.LocalBinder mLocalBinder = (ServClass.LocalBinder)service;
-            svobject = mLocalBinder.getServerInstance();
+            ServiceObj = mLocalBinder.getServerInstance();
         }
     };
 
