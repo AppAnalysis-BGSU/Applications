@@ -1,0 +1,4 @@
+#Sat Jan 27 22:30:42 EST 2018
+base.0=/home/dewan/Applications/Imeileak-V2/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
