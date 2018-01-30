@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/res/merged/debug/menu/activity_button1.xml",
-        "source": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/menu/activity_button1.xml"
+        "merged": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_button1.xml",
+        "source": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\menu\\activity_button1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V3\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_button1.xml",
+        "source": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V3\\app\\src\\main\\res\\menu\\activity_button1.xml"
     }
 ]

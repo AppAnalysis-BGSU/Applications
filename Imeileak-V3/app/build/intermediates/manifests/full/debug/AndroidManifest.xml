@@ -13,12 +13,11 @@
 
     <application
         android:allowBackup="true"
-        android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="de.ecspride.MainActivity"
+            android:name="com.imeileakv3.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,11 +26,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="de.ecspride.HiddenActivity"
-            android:parentActivityName="de.ecspride.MainActivity" >
+            android:name="com.imeileakv3.HiddenActivity"
+            android:parentActivityName="com.imeileakv3.MainActivity" >
         </activity>
 
-        <service android:name="de.ecspride.ServClass" >
+        <service android:name="com.imeileakv3.ServClass" >
         </service>
     </application>
 

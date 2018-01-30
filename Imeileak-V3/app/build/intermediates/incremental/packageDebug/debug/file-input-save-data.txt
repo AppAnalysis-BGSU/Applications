@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Sat Jan 27 23:14:37 EST 2018
-0.baseType=DIRECTORY
-0.base=/home/dewan/Applications/Imeileak-V3/app/build/intermediates/transforms/dexMerger/debug/0
-0.path=classes.dex
-0.set=DEX
-count=1

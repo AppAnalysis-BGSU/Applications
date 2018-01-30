@@ -3,12 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/home/dewan/Android3.3/Sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jar="C:\Users\Shiva\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="26.0.1"
+        revision="26.0.2"
         sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0_db950fb478b2b62a5a7c56f8f07a07f9dfccaa0f.jar" />
+        <dex dex="C:\Users\Shiva\Documents\Applications\Imeileak-V3\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0_3b406fb21b876b454a75ff1800e4741245e91019.jar" />
     </item>
 
 </items>

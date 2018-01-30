@@ -1,6 +1,110 @@
 [
     {
-        "outputFile": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "outputFile": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V3\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 48,
+                        "endOffset": 103
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 104,
+                    "endColumn": 41,
+                    "endOffset": 141
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V3\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 41,
+                        "endOffset": 198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 146,
+                    "endColumn": 50,
+                    "endOffset": 192
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V3\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 50,
+                        "endOffset": 155
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 197,
+                    "endLine": 11,
+                    "endColumn": 12,
+                    "endOffset": 483
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V3\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 192,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 488,
+                    "endLine": 14,
+                    "endColumn": 12,
+                    "endOffset": 643
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V3\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 525,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 682
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +115,7 @@
                     "endOffset": 95
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values/strings.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -30,7 +134,7 @@
                     "endOffset": 137
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values/strings.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +153,7 @@
                     "endOffset": 188
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values/strings.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -69,7 +173,7 @@
                     "endOffset": 479
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values/styles.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -90,7 +194,7 @@
                     "endOffset": 639
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values/styles.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
