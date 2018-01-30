@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+        "outputFile": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values-v14/styles.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values-v14\\styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -20,6 +20,32 @@
                         "endLine": 9,
                         "endColumn": 12,
                         "endOffset": 366
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 201
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V2\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 227,
+                        "endLine": 9,
+                        "endColumn": 12,
+                        "endOffset": 375
                     }
                 }
             }

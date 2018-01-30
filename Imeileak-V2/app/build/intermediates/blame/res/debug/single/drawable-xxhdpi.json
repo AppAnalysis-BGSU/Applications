@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_launcher.png",
-        "source": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Shiva\\Documents\\Applications\\Imeileak-V2\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
+        "source": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
     }
 ]
