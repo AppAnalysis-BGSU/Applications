@@ -3,7 +3,6 @@ package com.imeileakRef;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 
 import java.lang.reflect.InvocationTargetException;
@@ -20,18 +19,20 @@ public class MainActivity  extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-        String victimImei = telephonyManager.getDeviceId(); //Source
-        try {
-            Method methodSend=Imei.class.getMethod(getString(),String.class);
-            methodSend.invoke(new Imei(),victimImei);
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
+            TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+            String victimImei = telephonyManager.getDeviceId(); //Source
+            try {
+                Method methodSend = Imei.class.getMethod(getString(), String.class);
+
+                methodSend.invoke(new Imei(), victimImei);
+
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
 
     }
 
