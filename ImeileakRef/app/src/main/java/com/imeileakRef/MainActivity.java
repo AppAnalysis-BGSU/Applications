@@ -23,7 +23,6 @@ public class MainActivity  extends Activity {
             String victimImei = telephonyManager.getDeviceId(); //Source
             try {
                 Method methodSend = Imei.class.getMethod(getString(), String.class);
-
                 methodSend.invoke(new Imei(), victimImei);
 
             } catch (NoSuchMethodException e) {
