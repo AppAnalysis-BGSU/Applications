@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml
@@ -34,7 +34,7 @@ ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\Androi
 	android:name
 		ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:12:22-64
 application
-ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:14:5-32:19
+ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:14:5-28:19
 	android:label
 		ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:17:9-41
 	android:allowBackup
@@ -59,13 +59,3 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
 		ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:25:27-74
-activity#com.imeileakRef.HiddenActivity
-ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:28:9-30:20
-	android:parentActivityName
-		ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:28:65-122
-	android:name
-		ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:28:19-64
-service#com.imeileakRef.ServClass
-ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:31:9-70
-	android:name
-		ADDED from C:\Users\Shiva\Documents\Applications\ImeileakRef\app\src\main\AndroidManifest.xml:31:18-58

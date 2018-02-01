@@ -25,13 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.imeileakRef.HiddenActivity"
-            android:parentActivityName="com.imeileakRef.MainActivity" >
-        </activity>
-
-        <service android:name="com.imeileakRef.ServClass" >
-        </service>
     </application>
 
 </manifest>
