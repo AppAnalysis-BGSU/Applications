@@ -16,7 +16,6 @@ import android.widget.Toast;
 
 public class ServClass extends Service {
 
-
     IBinder mBinder = new LocalBinder();
 
     @Override
