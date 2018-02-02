@@ -18,9 +18,8 @@ import static org.junit.Assert.*;
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() throws Exception {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
-
-        assertEquals("com.example.shiva.statefulintent", appContext.getPackageName());
+        // Context of the app under test. // example test case, not working
+        MainActivity M=new MainActivity();
+        assertEquals(M.getImei(),"0000000");
     }
 }
