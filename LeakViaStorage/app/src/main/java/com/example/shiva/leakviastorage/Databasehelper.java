@@ -2,6 +2,7 @@ package com.example.shiva.leakviastorage;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -38,6 +39,12 @@ public class Databasehelper extends SQLiteOpenHelper {
             return false;
         else
             return true;
+    }
 
+    public Cursor getData(){
+        SQLiteDatabase db=this.getWritableDatabase();
+        String query="SELECT * FROM imei_table";
+        Cursor res=db.rawQuery(query,null);
+        return res;
     }
 }

