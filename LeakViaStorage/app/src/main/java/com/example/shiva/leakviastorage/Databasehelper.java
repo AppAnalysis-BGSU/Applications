@@ -1,5 +1,6 @@
 package com.example.shiva.leakviastorage;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -26,5 +27,17 @@ public class Databasehelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS"+TABLE_NAME);
         onCreate(db);
+    }
+
+    public boolean insertData(String imei){
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(COL1,imei);
+        long result=db.insert(TABLE_NAME,null,contentValues);
+        if (result==-1)
+            return false;
+        else
+            return true;
+
     }
 }

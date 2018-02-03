@@ -4,15 +4,19 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    Databasehelper imeiDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        imeiDb=new Databasehelper(this);
         String imei=getImei();
-        uploadImeiToDb(imei);
+        uploadToDb(imei);
     }
 
     public String getImei()
@@ -22,9 +26,14 @@ public class MainActivity extends AppCompatActivity {
         return imei;
     }
 
-    public void uploadImeiToDb(String imei)
+    public void uploadToDb(String str)
     {
-
+        boolean isInserted=imeiDb.insertData(str);
+        if (isInserted=true) {
+            Toast.makeText(MainActivity.this, "Data Inserted", Toast.LENGTH_LONG).show();
+        }
+        else
+            Toast.makeText(MainActivity.this,"Data not Inserted",Toast.LENGTH_LONG).show();
     }
 
     public String retriveImei()
@@ -37,5 +46,5 @@ public class MainActivity extends AppCompatActivity {
     {
 
     }
-    
+
 }
