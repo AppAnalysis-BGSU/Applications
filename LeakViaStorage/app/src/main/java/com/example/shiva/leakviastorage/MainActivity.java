@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     {
         boolean isInserted=imeiDb.insertData(str);
         if (isInserted=true) {
-            Toast.makeText(MainActivity.this, "Data Inserted", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "Data Inserted"+str, Toast.LENGTH_LONG).show();
         }
         else
             Toast.makeText(MainActivity.this,"Data not Inserted",Toast.LENGTH_LONG).show();
@@ -41,8 +41,12 @@ public class MainActivity extends AppCompatActivity {
 
     public String getFromDb()
     {
+        String imei="";
         Cursor res=imeiDb.getData();
-        String imei=res.getString(0);
+        while (res.moveToNext())
+        {
+            imei=res.getString(0);
+        }
         return imei;
     }
 
@@ -50,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
     {
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage("111", null, imei, null, null);
-
     }
 
 }
