@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+        "outputFile": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,33 @@
                     "endOffset": 187
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values-v11/styles.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 177,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 309
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\Shiva\\Documents\\Applications\\Private Activity\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 187
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Private Activity\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,

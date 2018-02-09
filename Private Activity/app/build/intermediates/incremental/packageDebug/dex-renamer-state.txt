@@ -1,4 +1,4 @@
-#Tue Jan 02 18:08:04 EST 2018
-base.0=/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Fri Feb 09 11:29:02 EST 2018
+base.0=C\:\\Users\\Shiva\\Documents\\Applications\\Private Activity\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.0=C\:\\Users\\Shiva\\Documents\\Applications\\Private Activity\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

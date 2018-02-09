@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/dewan/Downloads/Applications-master/Button1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "outputFile": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 95
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values/strings.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 137
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values/strings.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 188
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values/strings.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -69,7 +69,7 @@
                     "endOffset": 479
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values/styles.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -90,7 +90,111 @@
                     "endOffset": 639
                 },
                 "from": {
-                    "file": "/home/dewan/Downloads/Applications-master/Button1/app/src/main/res/values/styles.xml",
+                    "file": "C:\\home\\dewan\\Downloads\\Applications-master\\Button1\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 510,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 665
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\Shiva\\Documents\\Applications\\Private Activity\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 53,
+                    "endOffset": 104
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Private Activity\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 53,
+                        "endOffset": 105
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 109,
+                    "endColumn": 41,
+                    "endOffset": 146
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Private Activity\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 41,
+                        "endOffset": 198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 151,
+                    "endColumn": 50,
+                    "endOffset": 197
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Private Activity\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 110,
+                        "endColumn": 50,
+                        "endOffset": 156
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 202,
+                    "endLine": 11,
+                    "endColumn": 12,
+                    "endOffset": 488
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Private Activity\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 186,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 493,
+                    "endLine": 14,
+                    "endColumn": 12,
+                    "endOffset": 648
+                },
+                "from": {
+                    "file": "C:\\Users\\Shiva\\Documents\\Applications\\Private Activity\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
