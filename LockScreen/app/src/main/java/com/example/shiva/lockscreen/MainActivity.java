@@ -16,11 +16,6 @@ public class MainActivity extends AppCompatActivity {
     public void startOverlay()
     {
         Intent intent=new Intent(this, OverlayService.class);
-        if (!stopService(intent))
-        {
-            startService(intent); 
-
-        }
-
+        startService(intent);
     }
 }

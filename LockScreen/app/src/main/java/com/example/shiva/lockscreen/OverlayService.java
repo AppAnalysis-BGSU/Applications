@@ -20,12 +20,12 @@ public class OverlayService extends Service {
     {
         super.onCreate();
         oView=new LinearLayout(this);
-        oView.setBackgroundColor(0x88ff0000);
+        oView.setBackgroundColor(0xFFFFFFFF);
         WindowManager.LayoutParams params=new WindowManager.LayoutParams(
                 WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.MATCH_PARENT,
-                WindowManager.LayoutParams.TYPE_SYSTEM_OVERLAY,
-                0 |WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
+                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
+                0 |WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 PixelFormat.TRANSLUCENT
         );
         WindowManager wm=(WindowManager)getSystemService(WINDOW_SERVICE);
@@ -36,12 +36,6 @@ public class OverlayService extends Service {
     public void onDestroy()
     {
         super.onDestroy();
-        if (oView!=null)
-        {
-            WindowManager wm=(WindowManager)getSystemService(WINDOW_SERVICE);
-            wm.removeView(oView);
-        }
-
     }
 
 }
