@@ -25,7 +25,7 @@ public class OverlayService extends Service {
                 WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
-                0 |WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 PixelFormat.TRANSLUCENT
         );
         WindowManager wm=(WindowManager)getSystemService(WINDOW_SERVICE);
