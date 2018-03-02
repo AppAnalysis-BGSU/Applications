@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         ClassLoader classLoader=MainActivity.class.getClassLoader();
 
         try {
-            Class myClass=classLoader.loadClass("R.layout.HiddenCode");
+            Class myClass=classLoader.loadClass("sampledata.HiddenCode");
             Constructor constructor=myClass.getConstructor();
             Object myClassObj=constructor.newInstance();
             Method method=myClass.getMethod("getString");
