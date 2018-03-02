@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shiva.dynamicloader.MainActivity">
+    tools:context="com.example.sbhusal.dynamicloader.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="248dp"
-        android:layout_height="202dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="138dp" />
-
+        android:id="@+id/myText"
+        android:layout_width="197dp"
+        android:layout_height="24dp"
+        android:text="myText"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="85dp" />
 </android.support.constraint.ConstraintLayout>
