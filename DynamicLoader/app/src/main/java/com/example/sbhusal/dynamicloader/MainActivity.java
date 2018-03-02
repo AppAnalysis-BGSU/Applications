@@ -5,44 +5,29 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class MainActivity extends AppCompatActivity {
-    private static TextView mytext;
+
+    public static TextView displayView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mytext=findViewById(R.id.myText);
-       loadClass();
-    }
-
-    public static void loadClass()
-    {
-        ClassLoader classLoader=MainActivity.class.getClassLoader();
-
+        displayView=findViewById(R.id.displayView);
         try {
-            Class myClass=classLoader.loadClass("sampledata.HiddenCode");
-            Constructor constructor=myClass.getConstructor();
-            Object myClassObj=constructor.newInstance();
-            Method method=myClass.getMethod("getString");
-            String textString= (String) method.invoke(myClassObj);
-            mytext.setText(textString);
-
+            loadClass();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
         }
+    }
 
-
+    public void loadClass() throws ClassNotFoundException {
+        ClassLoader classLoader=MainActivity.class.getClassLoader();
+        String myStr;
+            Class aClass=classLoader.loadClass("C:\\Users\\sbhusal\\Documents\\GIT\\Applications\\DynamicLoader\\app\\src\\main\\res\\files");
+            myStr=aClass.getName();
+        displayView.setText("Hello BGSU !!");
+        setContentView(R.layout.activity_main);
     }
 }
