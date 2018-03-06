@@ -1,4 +1,4 @@
-package com.example.sbhusal.dynamicloader;
+package com.example.shiva.dynamicloader;
 
 import org.junit.Test;
 
