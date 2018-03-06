@@ -1,11 +1,7 @@
 package com.example.sbhusal.dynamicloader;
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
-
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,19 +11,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         displayView=findViewById(R.id.displayView);
-        try {
-            loadClass();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void loadClass() throws ClassNotFoundException {
-        ClassLoader classLoader=MainActivity.class.getClassLoader();
-        String myStr;
-            Class aClass=classLoader.loadClass("C:\\Users\\sbhusal\\Documents\\GIT\\Applications\\DynamicLoader\\app\\src\\main\\res\\files");
-            myStr=aClass.getName();
-        displayView.setText("Hello BGSU !!");
         setContentView(R.layout.activity_main);
+        displayView.setText(getString());
+    }
+    public String getString() {
+        //ClassLoader classLoader=MainActivity.class.getClassLoader();
+        //DexClassLoader dex=new DexClassLoader("data/apk",null,null,ClassLoader.getSystemClassLoader());
+        return "Hello";
+
     }
 }
