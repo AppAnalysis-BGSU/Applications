@@ -8,8 +8,7 @@ import android.util.Log;
 
 public class ClassToBeImported {
 
-    public static ClassLoader method(){
-        Log.v("ClassToBeImported", "called method of class " + ClassToBeImported.class.getName());
-        return ClassToBeImported.class.getClassLoader();
+    public static String getString() {
+        return "String loaded dynamically.";
     }
 }
