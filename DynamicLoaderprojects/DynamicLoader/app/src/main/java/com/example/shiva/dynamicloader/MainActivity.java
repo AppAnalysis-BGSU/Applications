@@ -1,11 +1,17 @@
 package com.example.shiva.dynamicloader;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import java.io.File;
+
 import dalvik.system.DexClassLoader;
 
+import static java.lang.ClassLoader.getSystemClassLoader;
+
 public class MainActivity extends AppCompatActivity {
+    File dexOutputDir =getDir("dex", Context.MODE_PRIVATE);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Note: Before this, push the APK file to the proper directory in device.
         For eg.adb push app/build/outputs/apk/debug/app-debug.apk data/local/tmp/testapks/load.apk
         */
-        DexClassLoader dex=new DexClassLoader("data/local/tmp/testapks/load.apk",null,null,ClassLoader.getSystemClassLoader());
+        final DexClassLoader dex=new DexClassLoader("data/local/tmp/testapks/load.apk",dexOutputDir.getAbsolutePath(),null,getSystemClassLoader());
         return "Hello World from method";
     }
 }
