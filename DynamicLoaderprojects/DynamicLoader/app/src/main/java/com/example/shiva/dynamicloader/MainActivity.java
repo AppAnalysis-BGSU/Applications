@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Note: Before this, push the APK file to the proper directory in device.
         For eg.adb push app/build/outputs/apk/debug/app-debug.apk data/local/tmp/testapks/load.apk
         */
-        final DexClassLoader dex=new DexClassLoader("data/local/tmp/testapks/load.apk",dexOutputDir.getAbsolutePath(),null,getSystemClassLoader());
+        final DexClassLoader dex=new DexClassLoader("/data/local/tmp/testapks/load.apk",dexOutputDir.getAbsolutePath(),null,getSystemClassLoader());
         return "Hello World from method";
     }
 }
